@@ -19,14 +19,14 @@ import com.dto.VilleDTO;
 /**
  * Servlet implementation class pageVilleServlet
  */
-@WebServlet("/pageVilleServlet")
-public class PageVilleServlet extends HttpServlet {
+@WebServlet("/calculDistance")
+public class CalculDistanceServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	/**
 	 * Default constructor.
 	 */
-	public PageVilleServlet() {
+	public CalculDistanceServlet() {
 	}
 
 	// Retourne toutes les villes

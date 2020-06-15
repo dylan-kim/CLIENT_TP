@@ -24,5 +24,7 @@ public class VilleDTO {
 	private String latitude;
 
 	private String longitude;
+	
+	public MeteoDTO meteo;
 
 }

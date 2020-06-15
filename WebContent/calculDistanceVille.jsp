@@ -2,8 +2,8 @@
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
-<%@ page import="com.servlet.PageVilleServlet" %>
-<%@ page import="com.servlet.PageInformationVilleServlet" %>
+<%@ page import="com.servlet.CalculDistanceServlet" %>
+<%@ page import="com.servlet.AfficherInformationServlet" %>
 <%@ page import="com.dto.VilleDTO" %>
 
 
@@ -32,19 +32,19 @@
 <body>
 	<div class="ui five item menu">
 	  <a class="item active" href=#>Distance Ville | FRANCE</a>
-	  <a class="item" href="<c:url value="pageInformationVilleServlet"/>">Information Ville | FRANCE</a>
+	  <a class="item" href="<c:url value="afficherInformation"/>">Information Ville | FRANCE</a>
 	</div>
 	
 	
 	<div class="ui five item menu">
-		<form action="pageVilleServlet" method="POST">
-			<select name="codeCommuneVilleA">
+		<form action="calculDistance" method="POST">
+			<select name="codeCommuneVilleA" class="ui selection dropdown">
 				<c:forEach var="ville" items="${ listeVille }" varStatus="loop">
 					<option value="${ ville.getCodeCommune() }">${ ville.getNomCommune() }</option>
 				</c:forEach>
 			</select>
 			
-			<select name="codeCommuneVilleB">
+			<select name="codeCommuneVilleB" class="ui selection dropdown">
 				<c:forEach var="ville" items="${ listeVille }" varStatus="loop">
 					<option value="${ ville.getCodeCommune() }">${ ville.getNomCommune() }</option>
 				</c:forEach>
