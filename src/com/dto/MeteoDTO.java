@@ -13,10 +13,10 @@ import lombok.Setter;
 public class MeteoDTO {
 	
 	private String temperature;
-	private String iconPath;
+	private String iconName;
 	
 	public String iconRepoPath() {
-		return "icons/" + this.iconPath +".png";
+		return "icons/" + this.iconName +".png";
 	}
 
 }
