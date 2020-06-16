@@ -5,4 +5,7 @@ Client qui fait appel à 2 APIs:
 - OpenWeather (https://openweathermap.org/api)
 
 
-Les icones viennent de OpenWeather.
+__Les icones viennent de OpenWeather.__
+
+Aperçu du projet :
+![Preview picture](preview.PNG)
