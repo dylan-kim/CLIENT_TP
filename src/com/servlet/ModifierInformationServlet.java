@@ -11,7 +11,6 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import com.api.VilleAPI;
-import com.dao.VilleDAO;
 import com.dto.VilleDTO;
 
 /**

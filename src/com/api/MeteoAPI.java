@@ -29,13 +29,19 @@ public class MeteoAPI {
 		JSONArray weather = jsonObj.getJSONArray("weather");
 		JSONObject main = jsonObj.getJSONObject("main");
 
+		MeteoDTO meteo = createMeteo(weather, main);
+		return meteo;
+		
+	}
+
+
+	private MeteoDTO createMeteo(JSONArray weather, JSONObject main) {
 		MeteoDTO meteo = new MeteoDTO();
-		meteo.setIconPath(weather.getJSONObject(0).getString("icon"));
+		meteo.setIconName(weather.getJSONObject(0).getString("icon"));
 		
 		double tempDegreCelsius = Math.round((double) main.get("temp") - 273.15);
 		meteo.setTemperature(String.valueOf(tempDegreCelsius));
 		return meteo;
-		
 	}
 	
 
