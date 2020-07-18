@@ -14,7 +14,7 @@ import com.util.RequeteGet;
 // Utilisation de l'API : https://openweathermap.org/api
 public class MeteoAPI {
 	
-	public static final String API_KEY = "760f99d6d0ccea337572ccfb96785ebb";
+	public static final String API_KEY = "YOUR_API_KEY";
 	
 	
 	public MeteoDTO getWeather(VilleDTO ville) throws JsonMappingException, JsonProcessingException {
